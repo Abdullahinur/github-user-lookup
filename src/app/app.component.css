@@ -1,0 +1,40 @@
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+* {
+  font-family: 'Shrikhand', cursive;
+  text-align: center;
+}
+
+.my-header {
+  background-color: #cc0000;
+}
+
+
+.input {
+  border: 4px
+}
+
+.animated-entry {
+    animation: tada 10s linear;
+}
